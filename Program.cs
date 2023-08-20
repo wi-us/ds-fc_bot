@@ -39,7 +39,7 @@ namespace Programm
         List<string> __msgs = new List<string>();
         List<DiscordMessage> __message = new List<DiscordMessage>();
         static void Main(string[] args) => new ProgramFaceitBot().MainAsync().GetAwaiter().GetResult();
-        string strBearer = "Bearer 024ed3e4-b288-45c3-aff4-229197e86fb3";
+        string strBearer = "Bearer " + "<API-TOKEN>";
 
         private async Task MainAsync()
         {
@@ -53,7 +53,7 @@ namespace Programm
 
 
 
-            var token = "MTEyMjU3MjU3MDY1MTI4MzY3Nw.GqqR8q.ekjGg4aahpO3UlfgpVdurKxjpG-QBEv8Q7AXqU";
+            var token = "<DISCORD-TOKEN>";
 
 
             await client.LoginAsync(TokenType.Bot, token);
